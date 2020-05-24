@@ -13,9 +13,9 @@ def login():
     time.sleep(1)
 
     # メアドと、パスワードを入力
-    driver.find_element_by_name('username').send_keys('ここにID')
+    driver.find_element_by_name('username').send_keys('show_scott333')
     time.sleep(1)
-    driver.find_element_by_name('password').send_keys('ここにパスワード')
+    driver.find_element_by_name('password').send_keys('shogo5027')
     time.sleep(1)
 
     # ログインボタンを押す
@@ -94,10 +94,11 @@ def clicknice():
 
 if __name__ == '__main__':
 
-    taglist = ['f4f', 'l4l', 'like4like', 'instagood', 'followme', 'follow', 'いいね返し']
+    # taglist = ['f4f', 'l4l', 'like4like', 'instagood', 'followme', 'follow', 'いいね返し']
+    taglist = ['kpop', 'ootd', 'outfit', 'fashionsnap', 'koreanfashion']
 
     while True:
-        driver = webdriver.Chrome('ここにパス')
+        driver = webdriver.Chrome('/Users/ikedunk/Desktop/chromedriver')
         time.sleep(1)
         login()
 
